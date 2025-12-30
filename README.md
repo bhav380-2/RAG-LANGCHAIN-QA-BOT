@@ -1,4 +1,4 @@
-# 🤖 RAG Chatbot: IBM watsonx.ai + LangChain
+# 🤖 RAG Chatbot: Using IBM watsonx.ai, LangChain & Gradio
 
 A powerful Retrieval-Augmented Generation (RAG) conversational agent built using **IBM watsonx.ai**, **LangChain**, and **Gradio**. This application allows users to upload documents (PDF/Text) and interact with an AI that provides answers based specifically on the uploaded content.
 
@@ -10,14 +10,17 @@ Below is a visual guide of the QA Bot interface:
 
 ### 1. Agent UI
 The main interface where the conversation takes place. Upload the Document
+
 ![Agent UI](./ss/s1.png)
 
 ### 2. User Query
 Ask specific questions related to the uploaded document.
+
 ![Write query](./ss/s2.png)
 
 ### 3. Agent Answer
 The system retrieves the relevant context from **ChromaDB** and generates a response using the **watsonx.ai** LLM.
+
 ![Agent answer](./ss/s3.png)
 
 ---
@@ -72,8 +75,8 @@ pip install ibm-watsonx-ai langchain-ibm langchain-community chromadb gradio pyp
 ```
 
 ## 🔐 Step 3: Credentials & Configuration
-
 To connect to **IBM watsonx.ai**, you need to provide your API Key and Project ID. 
+
 ```python
 # 1. Setup Credentials
 credentials = Credentials(
